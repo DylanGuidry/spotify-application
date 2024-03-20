@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import 'tailwindcss/tailwind.css'; // Import Tailwind CSS
+import { useNavigate } from 'react-router-dom';
 
 function SearchBar() {
     const [searchInput, setSearchInput] = useState("");
     const [suggestions, setSuggestions] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (searchInput.trim() === "") {
@@ -66,6 +69,7 @@ function SearchBar() {
     // Handle suggestion click
     function handleSuggestionClick(suggestion) {
         setSearchInput(suggestion.name); // Fill input with clicked suggestion
+        navigate(`/search/${suggestion.id}`); // Navigate to artist info page
         setSuggestions([]); // Clear suggestions
     }
 
