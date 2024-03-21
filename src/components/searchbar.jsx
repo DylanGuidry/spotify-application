@@ -64,6 +64,9 @@ function SearchBar() {
     // Handle form submission
     function handleSubmit() {
         console.log('Search for:', searchInput);
+        navigate(`/search/${searchInput}`); // Navigate to search page with query
+        setSearchInput(""); // Clear input field
+        setSuggestions([]); // Clear suggestions
     }
 
     // Handle suggestion click
@@ -77,16 +80,13 @@ function SearchBar() {
         <div className="relative">
             {/* // Input field */}
             <input
-                className="bg-gray-200 rounded-l-lg px-4 py-2 focus:outline-none w-64"
+                className="bg-gray-200 rounded-lg px-4 py-2 focus:outline-none w-100"
                 type="text"
-                placeholder="Search..."
+                placeholder="Search Artists..."
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
                 onKeyDown={handleKeyDown}
             />
-            <button onClick={handleSubmit} className="bg-green-500 text-white rounded-r-lg px-4 py-2 ml-1 hover:bg-green-600">
-                Search
-            </button>
             {/* // Display suggestions if there are any */}
             {suggestions.length > 0 && (
                 // Display suggestions in a dropdown
