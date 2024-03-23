@@ -131,13 +131,13 @@ function ArtistsInfo() {
                 <div className="w-full flex justify-center mt-4">
                     <div className="relative w-24 h-24">
                         <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" title="Popularity">
-                            <circle cx="18" cy="18" r="16" fill="none" className="stroke-current text-gray-200 dark:text-gray-700" strokeWidth="2"></circle>
+                            <circle cx="18" cy="18" r="16" fill="none" className="stroke-current text-gray-700 dark:text-gray-700" strokeWidth="2"></circle>
                             <g className="origin-center transform -rotate-90">
                                 <circle cx="18" cy="18" r="16" fill="none" className="stroke-current text-green-600 dark:text-green-500" strokeWidth="2" strokeDasharray="100" strokeDashoffset={100 - artist.popularity}></circle>
                             </g>
                         </svg>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            <span className="text-center text-sm font-bold text-gray-800 dark:text-white">{artist.popularity}%</span>
+                            <span className="text-center text-sm font-bold text-gray-800">{artist.popularity}%</span>
                         </div>
                     </div>
                 </div>
