@@ -1,19 +1,17 @@
 import './App.css';
 import React from 'react';
 import Homepage from './pages/homepage.jsx';
-import AlbumInfo from './pages/albuminfo.jsx'; // Assuming you have a component for displaying album info
-import ArtistInfo from './pages/artistinfo.jsx'; // Assuming you have a component for displaying artist info
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import AlbumInfo from './pages/albuminfo.jsx'; // Component for displaying album info
+import ArtistInfo from './pages/artistinfo.jsx'; // Component for displaying artist info
+import { Routes, Route } from 'react-router-dom'; // Importing Routes and Route
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/search/:id" element={<ArtistInfo />} />
-        <Route path="/album/:id" element={<AlbumInfo />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/search/:id" element={<ArtistInfo />} />
+      <Route path="/album/:id" element={<AlbumInfo />} />
+    </Routes>
   );
 }
 
