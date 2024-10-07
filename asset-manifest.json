@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/spotify-application/static/css/main.014f2f25.css",
+    "main.js": "/spotify-application/static/js/main.a2342103.js",
+    "static/js/453.e14fca0d.chunk.js": "/spotify-application/static/js/453.e14fca0d.chunk.js",
+    "static/media/Spotify_Icon_RGB_Green.png": "/spotify-application/static/media/Spotify_Icon_RGB_Green.cd66b8f63f6566194c7e.png",
+    "index.html": "/spotify-application/index.html",
+    "main.014f2f25.css.map": "/spotify-application/static/css/main.014f2f25.css.map",
+    "main.a2342103.js.map": "/spotify-application/static/js/main.a2342103.js.map",
+    "453.e14fca0d.chunk.js.map": "/spotify-application/static/js/453.e14fca0d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.014f2f25.css",
+    "static/js/main.a2342103.js"
+  ]
+}
